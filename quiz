@@ -1,0 +1,48 @@
+for value in values {
+    result+=[value*1.1]
+    result.sort()
+}
+var result5:[Double]=[]
+for value  in values {
+    let temp:Double=values[0]
+    if(value>(temp/2)){
+        result5+=[value]
+    }
+}
+var meetingRooms:[String:Int]=["fff":3,"abc":10,"gogo":12]
+var result2:[String:Int]=[:]
+for meetingRoom in meetingRooms {
+    if(meetingRoom.value > meetingRooms.count){
+        result2[meetingRoom.key]=meetingRoom.value
+    }
+}
+
+
+let upper_alphabets = ["A", "B", "C", "D", "E","F"]
+var result8:[String]=[]
+var check:Int=0
+for alphabet in upper_alphabets {
+    
+    if (check == upper_alphabets.count/2 || (check%2)==0){
+        result8+=[]
+    }
+    else {
+        result8+=[alphabet]
+    }
+    check+=1
+}
+
+
+let upper_alphabets1 = ["A", "B", "C", "D", "E", "F", "G", "H"]
+var result9:[String]=[]
+var check1:Int=0
+for alphabet in upper_alphabets1 {
+    
+    if (check1 == upper_alphabets1.count/3 || (check1%3)==0 || alphabet=="B"){
+        result9+=[]
+    }
+    else {
+        result9+=[alphabet]
+    }
+    check1+=1
+}
